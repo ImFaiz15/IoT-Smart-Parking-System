@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IoT Smart Parking System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row vh-100">
+
+        <!-- LEFT SIDEBAR -->
+        <div class="col-md-2 bg-dark text-white p-3">
+            <div class="text-center mb-4">
+                <img src="https://cdn-icons-png.flaticon.com/512/743/743922.png" width="60">
+                <h4>IoT SPS</h4>
+            </div>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">Available Parking</li>
+                <li class="nav-item mb-2">Check Your History</li>
+                <li class="nav-item mb-2">Reserve Slot</li>
+                <li class="nav-item mb-2">360 View</li>
+                <li class="nav-item mb-2">Contact Us</li>
+            </ul>
+        </div>
+
+        <!-- MIDDLE SECTION -->
+        <div class="col-md-8 text-center p-4">
+            <h3>Total Parking Slots: 6</h3>
+            <div class="row mt-4" id="parkingSlots"></div>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="col-md-2 bg-light p-3 text-center">
+            <button class="btn btn-primary w-100 mb-3" onclick="showFeedback()">Feedback</button>
+            <button class="btn btn-success w-100" onclick="openLogin()">Login / Logout</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- Registration / Login Modal -->
+<div class="modal fade" id="loginModal">
+  <div class="modal-dialog">
+    <div class="modal-content p-3">
+      <h5>Create Account</h5>
+      <input class="form-control mb-2" id="name" placeholder="Name">
+      <input class="form-control mb-2" id="mobile" placeholder="Mobile Number">
+      <input class="form-control mb-2" id="email" placeholder="Email">
+      <input class="form-control mb-2" id="vehicleName" placeholder="Vehicle Name">
+      <input class="form-control mb-2" id="vehicleNumber" placeholder="Vehicle Number">
+      <button class="btn btn-primary w-100" onclick="createAccount()">Submit</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

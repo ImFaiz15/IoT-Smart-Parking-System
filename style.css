@@ -1,0 +1,18 @@
+body {
+    background-color: #f5f7fa;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.slot {
+    height: 120px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    cursor: pointer;
+}
