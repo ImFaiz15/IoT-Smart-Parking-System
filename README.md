@@ -11,11 +11,11 @@ This project is an IoT and Web-Based Smart Parking System designed to monitor pa
 
 ## Technologies Used
 Hardware:
-- Ultrasonic Sensor
+- IR Sensor
 - NodeMCU ESP8266
 
 Software:
-- Arduino IDE
+- Arduino IDE (WIFI)
 - React (Vite)
 - TypeScript
 - Tailwind CSS
