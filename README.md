@@ -11,11 +11,11 @@ This project is an IoT and Web-Based Smart Parking System designed to monitor pa
 
 ## Technologies Used
 Hardware:
-- Ultrasonic Sensor
+- IR Sensor
 - NodeMCU ESP8266
 
 Software:
-- Arduino IDE
+- Arduino IDE(WIFI)
 - React (Vite)
 - TypeScript
 - Tailwind CSS
@@ -29,6 +29,7 @@ Sensors detect vehicle presence and send data through ESP8266 to the cloud datab
 - Shopping Malls
 - Hospitals
 - College Campuses
+- Hotels
 
 ## Future Scope
 - Mobile Application
@@ -38,4 +39,5 @@ Sensors detect vehicle presence and send data through ESP8266 to the cloud datab
 ## Author
 Mohd Faiz
 Vishal
+Ashish Singh
 B.Tech CSE
