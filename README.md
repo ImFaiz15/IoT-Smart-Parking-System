@@ -1,4 +1,4 @@
-5# IoT Smart Parking System 🚗
+# IoT Smart Parking System 🚗
 
 ## Overview
 This project is an IoT and Web-Based Smart Parking System designed to monitor parking slot availability in real time using ultrasonic sensors and ESP8266.
@@ -11,11 +11,11 @@ This project is an IoT and Web-Based Smart Parking System designed to monitor pa
 
 ## Technologies Used
 Hardware:
-- IR Sensor
+- Ultrasonic Sensor
 - NodeMCU ESP8266
 
 Software:
-- Arduino IDE with wifi
+- Arduino IDE
 - React (Vite)
 - TypeScript
 - Tailwind CSS
