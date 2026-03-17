@@ -16,13 +16,13 @@ Hardware:
 
 Software:
 - Arduino IDE
-- HTML
-- CSS
-- JavaScript
+- React (Vite)
+- TypeScript
+- Tailwind CSS
 - Firebase
 
 ## Working
-Sensors detect vehicle presence and send data through ESP8266 to the cloud database. The web dashboard updates parking availability instantly.
+Sensors detect vehicle presence and send data through ESP8266 to the cloud database. The web dashboard updates parking availability instantly. Add user interface also add Admin page.
 
 ## Applications
 - Smart Cities
