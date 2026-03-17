@@ -37,4 +37,5 @@ Sensors detect vehicle presence and send data through ESP8266 to the cloud datab
 
 ## Author
 Mohd Faiz
+Vishal
 B.Tech CSE
