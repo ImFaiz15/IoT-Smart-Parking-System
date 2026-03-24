@@ -85,21 +85,21 @@ export function AuthPanel() {
           <>
             <div>
               <Label htmlFor="name" className="text-xs">Full Name</Label>
-              <Input id="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="mohd faiz" />
+              <Input id="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="user name" />
             </div>
             <div>
               <Label htmlFor="mobile" className="text-xs">Mobile</Label>
-              <Input id="mobile" value={form.mobile} onChange={(e) => setForm({ ...form, mobile: e.target.value })} placeholder="+91 9876543210" />
+              <Input id="mobile" value={form.mobile} onChange={(e) => setForm({ ...form, mobile: e.target.value })} placeholder="+91 1234567890" />
             </div>
             <div>
               <Label htmlFor="vehicle" className="text-xs">Vehicle Number</Label>
-              <Input id="vehicle" value={form.vehicleNumber} onChange={(e) => setForm({ ...form, vehicleNumber: e.target.value })} placeholder="MH-12-AB-1234" />
+              <Input id="vehicle" value={form.vehicleNumber} onChange={(e) => setForm({ ...form, vehicleNumber: e.target.value })} placeholder="HR-00-AB-0000" />
             </div>
           </>
         )}
         <div>
           <Label htmlFor="email" className="text-xs">Email</Label>
-          <Input id="email" type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="you@email.com" />
+          <Input id="email" type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="abc@email.com" />
         </div>
         <div>
           <Label htmlFor="password" className="text-xs">Password</Label>
