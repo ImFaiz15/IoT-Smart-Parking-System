@@ -99,7 +99,7 @@ export function AuthPanel() {
         )}
         <div>
           <Label htmlFor="email" className="text-xs">Email</Label>
-          <Input id="email" type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="abc@email.com" />
+          <Input id="email" type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="your@email.com" />
         </div>
         <div>
           <Label htmlFor="password" className="text-xs">Password</Label>
