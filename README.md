@@ -12,10 +12,12 @@ This project is an IoT and Web-Based Smart Parking System designed to monitor pa
 ## Technologies Used
 Hardware:
 - IR Sensor
+- ESP32 CAM with dual-mode Wi-Fi and Bluetooth 4.2 BLE
+- Arduino UNO with dual-mode Wi-Fi and Bluetooth 
 - NodeMCU ESP8266
 
 Software:
-- Arduino IDE(WIFI)
+- Arduino IDE
 - React (Vite)
 - TypeScript
 - Tailwind CSS
