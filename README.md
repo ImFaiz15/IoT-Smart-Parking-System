@@ -235,7 +235,8 @@ Passionate about Web Development, Full Stack Systems, and Smart City Projects
 ## 👥 Contributors
 
 - 👨‍💻 **Vishal** – Frontend Developer  
-  🔗[ https://github.com/member](https://github.com/Vishal35498) 
+  🔗[ https://github.com/member](https://github.com/Vishal35498)
+  ---
 
   
 
