@@ -11,7 +11,7 @@ The project is designed with a modern UI and a backend-ready structure for futur
 |---|---|
 | Project Name | Smart Parking System |
 | Type | Full Stack Web Application |
-| Domain | IoT / Web Development / Smart City |
+| Domain | IoT / Web Development |
 | Main Goal | Manage parking slots efficiently with a user-friendly interface |
 | Future Scope | Admin portal, reservation system, history page, real-time updates |
 
