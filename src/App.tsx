@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ParkingProvider } from "@/contexts/ParkingContext";
-import { AppLayout } from "@/components/AppLayout";
+import { AppLayout } from "@/AppLayout";
 import Dashboard from "./pages/Dashboard";
 import HistoryPage from "./pages/HistoryPage";
 import ReserveSlot from "./pages/ReserveSlot";
