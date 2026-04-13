@@ -1,8 +1,8 @@
 import { SidebarProvider } from "@/components/ui/sidebar";
-import { AppSidebar } from "./components/AppSidebar";
-import { TopBar } from "./components/TopBar";
-import { AuthPanel } from "./components/AuthPanel";
-import { FeedbackForm } from "./components/FeedbackForm";
+import { AppSidebar } from "./AppSidebar";
+import { TopBar } from "./TopBar";
+import { AuthPanel } from "./AuthPanel";
+import { FeedbackForm } from "./FeedbackForm";
 
 interface AppLayoutProps {
   children: React.ReactNode;
