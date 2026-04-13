@@ -1,31 +1,35 @@
-import { LayoutDashboard, History, CalendarCheck, Eye, Mail, Car } from "lucide-react";
+// ============================================================
+// FILE: src/components/AppSidebar.tsx   (REPLACE existing file)
+// Changes: Admin nav item shown only when user is admin
+// ============================================================
+
+import { LayoutDashboard, History, CalendarCheck, Eye, Mail, Car, ShieldCheck } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
+import { useParking } from "@/contexts/ParkingContext";
 import {
-  Sidebar,
-  SidebarContent,
-  SidebarGroup,
-  SidebarGroupContent,
-  SidebarGroupLabel,
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
-  SidebarHeader,
-  useSidebar,
+  Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent,
+  SidebarGroupLabel, SidebarMenu, SidebarMenuButton, SidebarMenuItem,
+  SidebarHeader, useSidebar,
 } from "@/components/ui/sidebar";
 
 const navItems = [
-  { title: "Dashboard", url: "/", icon: LayoutDashboard },
-  { title: "Check History", url: "/history", icon: History },
-  { title: "Reserve Slot", url: "/reserve", icon: CalendarCheck },
-  { title: "360 View", url: "/360-view", icon: Eye },
-  { title: "Contact Us", url: "/contact", icon: Mail },
+  { title: "Dashboard",     url: "/",         icon: LayoutDashboard },
+  { title: "Check History", url: "/history",  icon: History },
+  { title: "Reserve Slot",  url: "/reserve",  icon: CalendarCheck },
+  { title: "360 View",      url: "/360-view", icon: Eye },
+  { title: "Contact Us",    url: "/contact",  icon: Mail },
 ];
 
 export function AppSidebar() {
   const { state } = useSidebar();
   const collapsed = state === "collapsed";
   const location = useLocation();
+  const { isAdmin } = useParking();
+
+  const allItems = isAdmin
+    ? [...navItems, { title: "Admin Panel", url: "/admin", icon: ShieldCheck }]
+    : navItems;
 
   return (
     <Sidebar collapsible="icon">
@@ -46,7 +50,7 @@ export function AppSidebar() {
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {navItems.map((item) => (
+              {allItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <NavLink
